@@ -1,0 +1,519 @@
+@import url("TESLA.ttf");
+@import url("Malibu.ttf");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  height: vh;
+}
+
+span {
+  color: red;
+  font-size: 4rem;
+  margin: -10rem 1rem 0 1rem;
+}
+.navbar {
+  padding: 1rem;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 1rem red;
+  z-index: 99;
+}
+
+.navbar h1 {
+  font-family: "Tesla";
+  color: red;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.navbar h1:hover {
+  color: red;
+}
+
+.navbar ul {
+  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar ul a:hover {
+  color: red;
+}
+
+.hero {
+  min-height: 10vh;
+  padding: 10rem 0 0 1rem;
+  background-image: url("https://staticcdn.redcliffelabs.com/media/gallary-file/None/f98f7587-4c30-4f7d-b3ae-d96270747d30.png");
+}
+
+.hero p {
+  color: white;
+  font-size: 2.2rem;
+  margin: -2rem 0 -2rem 17rem;
+  z-index: 2;
+  position: relative;
+  padding: 30px;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 3rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.section1 img {
+  margin-top: -23rem;
+  height: 50rem;
+  width: 100vw;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section2 img {
+  height: 50rem;
+  width: 100vw;
+}
+
+.section2 p {
+  color: white;
+  position: relative;
+  margin-top: -40rem;
+  width: 55%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 3rem;
+  border: 1px solid white;
+}
+
+.span2 {
+  color: red;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.section2 .para2 {
+  color: white;
+  position: relative;
+  margin-top: 2rem;
+  width: 100%;
+  height: 30rem;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.aboutus {
+  background-image: url("https://staticcdn.redcliffelabs.com/media/gallary-file/None/57db85c8-5437-499a-9aa8-72bbb2a38432.png");
+  background-size: 60rem;
+  margin-top: -100px;
+}
+.aboutus h2 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  padding-top: 10rem;
+  margin-bottom: 12rem;
+}
+
+.about-content {
+  display: grid;
+  row-gap: 6rem;
+  grid-template-columns: auto auto;
+  align-content: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.about-content p {
+  border: 2px solid red;
+  border-radius: 2rem;
+  color: white;
+  height: 13rem;
+  font-size: 1.3rem;
+}
+
+.rocket img {
+  margin-left: 35%;
+  width: 30rem;
+  rotate: 0deg;
+  margin-top: -200rem;
+  height: 55rem;
+  animation-name: moveup;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+}
+
+.about-content .content-span {
+  color: red;
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+
+.about-content p {
+  width: 20vw;
+}
+
+.about-content .content-span2 {
+  color: white;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.section3 {
+  color: white;
+  text-align: center;
+  padding: 6rem 0;
+  font-size: 3rem;
+}
+
+.section3-bg {
+  background-image: url("https://staticcdn.redcliffelabs.com/media/gallary-file/None/57db85c8-5437-499a-9aa8-72bbb2a38432.png");
+  background-size: 60rem;
+}
+.service-main {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  border: 2px solid red;
+  height: 18rem;
+  width: 30vw;
+  cursor: pointer;
+}
+
+.service .num p {
+  color: red;
+  font-size: 4rem;
+}
+
+.service h3 {
+  text-align: left;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+}
+
+.service p {
+  text-align: left;
+  padding: 0 1.5rem;
+  width: auto;
+}
+
+.projects {
+  background-image: url("https://staticcdn.redcliffelabs.com/media/gallary-file/None/57db85c8-5437-499a-9aa8-72bbb2a38432.png");
+  background-size: 60rem;
+}
+
+#projects {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  padding-top: 6rem;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  column-gap: 10rem;
+  row-gap: 3rem;
+  margin-top: 6rem;
+  position: relative;
+  z-index: 10;
+}
+.clients img {
+  width: 10rem;
+  border-radius: 13px;
+}
+
+.section4 h3 {
+  position: relative;
+  margin-top: 10rem;
+  z-index: 3;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+
+.section4 img {
+  width: 100vw;
+  margin-top: -25rem;
+}
+
+.contact-form {
+  background-image: url("https://staticcdn.redcliffelabs.com/media/gallary-file/None/57db85c8-5437-499a-9aa8-72bbb2a38432.png");
+  background-size: 60rem;
+}
+
+.contact-form h2 {
+  color: white;
+  font-size: 4rem;
+  padding-top: 6rem;
+  text-align: center;
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vw;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+button {
+  width: 20vw;
+  margin: auto;
+  margin-top: 1.2rem;
+  padding: 10px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.text {
+  border: none;
+  border-bottom: 2px solid #555;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+  transition: border-bottom-color 0.3s;
+  color: black;
+}
+
+.text:focus {
+  background: rgb(117, 9, 9);
+  color: white;
+}
+
+.email {
+  border: none;
+  border-bottom: 2px solid #555;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+  transition: border-bottom-color 0.3s;
+  color: black;
+}
+
+.email:focus {
+  background: rgb(117, 9, 9);
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 10rem;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer p {
+  padding-bottom: 2rem;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+
+  margin: 2rem 10px 0;
+}
+@media (max-width: 600px) {
+  .hero p {
+    color: white;
+    font-size: 30px;
+    margin: -2rem 0 -2rem -2rem;
+    z-index: 2;
+    position: relative;
+    padding: 44px;
+  }
+  .navbar {
+    display: block;
+    justify-content: space-between;
+    box-shadow: 0 0 1rem red;
+    z-index: 99;
+  }
+  .section1 img {
+    margin-top: -23rem;
+    /* height: 50rem; */
+    width: 100vw;
+  }
+  .navbar ul {
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .hero h1 {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  span {
+    color: red;
+    font-size: 30px;
+    margin: 0px;
+  }
+  .section2 p {
+    padding: 16px;
+    width: 100%;
+  }
+  .about-content p {
+    width: 40vw;
+    padding: 5px;
+    height: auto;
+  }
+
+  .section4 h3 {
+    position: relative;
+    margin-top: 5rem;
+    z-index: 3;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  .aboutus h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 10rem;
+    margin-bottom: 6rem;
+  }
+  .contact-form h2 {
+    color: white;
+    font-size: 30px;
+    padding-top: 3rem;
+    text-align: center;
+  }
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 16px;
+  }
+  button {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .slider {
+    display: grid;
+    grid-template-columns: none;
+    justify-content: center;
+    column-gap: 10rem;
+    row-gap: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 10;
+  }
+  .clients {
+    padding: 16px;
+  }
+  .clients img {
+    width: 100%;
+    border-radius: 13px;
+  }
+  #projects {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding-top: 3rem;
+  }
+  .section3 {
+    color: white;
+    text-align: center;
+    padding: 2.5rem 0;
+    font-size: 24px;
+  }
+  .service-main {
+    display: grid;
+    grid-template-columns: none;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    border: 2px solid red;
+    height: auto;
+    width: 90%;
+    cursor: pointer;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  .service h3 {
+    text-align: left;
+    padding: 1rem 1.5rem;
+    font-size: 16px;
+  }
+  .service-info {
+    padding: 10px 0px;
+  }
+
+  .rocket {
+    display: none;
+  }
+}
